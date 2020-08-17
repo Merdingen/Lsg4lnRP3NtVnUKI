@@ -1,0 +1,183 @@
+.drag-drop-list-container {
+	margin: 0;
+	padding: 5px !important;
+}
+
+.drop-list {
+	height: 100%;
+	border: 2px solid #1bd5b5;
+	padding: 5px;
+	border-radius: 15px;
+}
+
+.drag-list {
+	height: 100%;
+	border: 2px solid #1bd5b5;
+	padding: 5px;
+	border-radius: 15px;
+}
+
+.drag {
+	border: 1px solid #1bd5b5;
+	border-radius: 5px;
+	margin: 7px;
+	min-height: 80px;
+	padding: 3px 20px;
+	-webkit-box-shadow: 0px 0px 5px 1px rgba(0,0,0,0.2);
+	-moz-box-shadow: 0px 0px 5px 1px rgba(0,0,0,0.2);
+	box-shadow: 0px 0px 5px 1px rgba(0,0,0,0.2);
+	display: flex;
+}
+
+.draggable-item {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	flex-wrap: wrap;
+}
+
+.draggable-item p {
+	margin: 0 25px 5px 25px;
+	font-size: 25px;
+	color: #5c5d5d;
+	font-family: Candara, sans-serif;
+}
+
+.draggable-panel-container {
+	padding: 10px 20px 10px 20px;
+	border-radius: 5px;
+	border: 1px solid #1bd5b5;
+	margin: 7px;
+	-webkit-box-shadow: 0px 0px 5px 1px rgba(0,0,0,0.2);
+	-moz-box-shadow: 0px 0px 5px 1px rgba(0,0,0,0.2);
+	box-shadow: 0px 0px 5px 1px rgba(0,0,0,0.2);
+	min-height: 170px;
+}
+
+.draggable-panel-header {
+	font-size: 20px;
+	background: #9e9e9e21;
+	font-family: Candara, sans-serif;
+	padding: 10px 10px 10px 15px;
+	margin-bottom: 10px;
+	border-radius: 10px;
+}
+
+.radio-button-section {
+	padding: 3px 5px 3px 5px;
+}
+
+.radio-button {
+	width: 15px;
+	height: 15px;
+	margin-right: 5px;
+}
+
+.radio-button-element {
+	padding: 5px 3px 5px 3px;
+}
+
+.radio-button-input, .text-input {
+	min-width: 95%;
+	min-height: 40px;
+	padding: 0 10px 0 10px;
+	border-radius: 10px;
+	border: 1px solid #e3c042;
+}
+
+.radio-button-input:focus, .text-input:focus {
+	outline: none;
+}
+
+.drop-target-header {
+	height: 50px;
+	background: #1bd5b5;
+	margin: -6px -5px 0px -6px;
+	border-radius: 14px 14px 0 0;
+	position: sticky;
+	top: 0;
+}
+
+.image-element {
+	padding: 5px;
+}
+
+/*hide the inputs/checkmarks and submenu*/
+.dropdown-menu-checkbox, ul.submenu {
+	display: none;
+	position: absolute;
+}
+
+/*position the label*/
+label {
+	position: relative;
+	display: block;
+	cursor: pointer;
+}
+
+/*show the submenu when input is checked*/
+.dropdown-menu-checkbox:checked~ul.submenu {
+	display: block;
+	padding: 10px;
+	margin: 0;
+	border: 2px solid white;
+	border-radius: 10px;
+	background: #ffc127;
+	list-style-type: none;
+	position: absolute;
+	right: 0;
+}
+
+.dropdown-menu-div {
+	position: absolute;
+	right: 60px;
+	padding-top: 12px;
+}
+
+.submenu button {
+	color: white;
+	font-size: 18px;
+	font-family: Candara, sans-serif;
+	background: transparent;
+	border: none;
+}
+
+.submenu button:focus {
+	outline: none;
+}
+
+.text-input-panel-body {
+	display: flex;
+	padding-top: 25px;
+	flex-direction: row;
+	align-items: center;
+	flex-wrap: wrap;
+	margin-bottom: 10px;
+}
+
+.text-input-element {
+	width: 50%;
+	padding: 0 25px;
+}
+
+.text-input-label-init {
+	border: none;
+	border-bottom: 1px solid;
+	width: 100%;
+}
+
+.text-input-label-init:focus {
+	outline: none;
+}
+
+.text-input-remove {
+	width: 20%;
+	padding: 0px 25px;
+	display: flex;
+	flex-direction: row;
+	align-items: flex-end;
+}
+
+.text-area-element {
+	padding: 10px;
+}
